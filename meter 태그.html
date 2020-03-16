@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title> meter 태그 </title>
+</head>
+<body>
+  <h2> meter 태그 (현재진행 상황을 퍼센트로 표시) </h2><br>
+  <pre></h2>(min,max) - 범위의 최대 최소값. 정하지않으면 0과 1로 간주<br>
+  (value) - 범위내에서 차지하는 값
+  (low) - 낮은 정도 값
+  (high) - 높은 정도 값
+  (optimum) - 적당한 값 optimum 값이 high 값보다 크면 value 클수록 좋
+                        optimum 값이 low 값보다 작으면 value 작을 좋</pre><//h2>
+<form>
+  <meter value="0.5"></meter><br>
+  <meter min="0" max="200" value="100"></meter><br>
+  <meter min="0" max="200" value="150" low="70" high="140"></meter><br>
+  <meter min="0" max="200" value="60" low="70" high="140"></meter><br>
+  <meter min="0" max="200" value="60" low="60" high="110"></meter><br>
+  optimum : <meter min="0" max="200" value="60" low="70" high="140"
+                optimum="60"></meter>
+</form>
+</body>
+</html>
